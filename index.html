@@ -1,112 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="icon" href="img/icon.png" type="image/png">
-        <title>Populst - Coming Soon!</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Bootstrap 4-->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-        <!--icons-->
-        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-        <link rel="stylesheet" href="js/countdown/jquery.countdown.css" />
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <title>Populst - Coming Soon!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!--icons-->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="js/countdown/jquery.countdown.css" />
+    <style>
+        .hero {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .section-padding {
+            padding: 60px 0;
+        }
+        .footer {
+            padding: 20px 0;
+        }
+        .reduced-margin {
+            margin-bottom: 10px;
+        }
+        .reduced-top-margin {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero bg-white p-0">
         <!--hero section-->
-        <section class="bg-white hero p-0">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-5 bg-light text-center col-fixed">
-                        <div class="text-center">
-                            <img src="img/logo.png" alt="Image" class="img-fluid">
-                        </div>
-                        <h3>Harnessing the People's Power</h3>
-                        <p class="mt-4">
-                            VOX POPULI<br/>"For the People"
-                        </p>
-                        <div class="launch-text">We're launching soon.</div> 
-                        
-                        <p class="mt-4">
-                            Check out the video of the problem we are solving.
-                        </p>      
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h6ZnQtI_nP8" allowfullscreen></iframe>
-                            </div></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-5 bg-light text-center col-fixed">
+                    <div class="text-center">
+                        <img src="img/logo.png" alt="Image" class="img-fluid">
                     </div>
-                    <div class="col-sm-7 offset-sm-5 px-0 py-2">
-                        <!--Why This Domain-->
-                        <section class="pt-4">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-8 mx-auto text-center">
-                                        <h2 class="text-primary pb-3">About</h2>
-                                        <p class="text-muted">
-                                            <b>Our mission is clear.</b> Restore accountability, transparency, accessibility, and centralization to the civic sphere.
-                                            
-                                            <br><Br><b>Our team</b> consists of dedicated professionals with a unique blend of expertise and passion. With over a decade of collaboration together, we have a proven track record of innovation and positive impact. 
-                                        </p>
-                                    </div>
-                                </div>
-                                <hr class="my-4">
-                                <br>
-                                <div class="col-sm-8 mx-auto text-center">
-                                    <h2 class="text-primary pb-3">Stakeholders and Value</h2>
-                                    <p class="text-muted">
-                                        Our platform is designed to deliver value to three key stakeholders: Users, Elected Officials, and Data Subscribers.
-                                    </p>
-                                </div>
-                                <div class="row d-md-flex mt-4">
-                                    <div class="col-sm-4 mt-2 text-center">
-                                        <img src="img/user.jpg" alt="User" class="img-team img-fluid rounded-circle"/>
-                                        <h4>Users</h4>
-                                        <p class="text-muted">Non-social platform for accessible, informed, and engaged civic participation.</p>
-                                    </div>
-                                    <div class="col-sm-4 mt-2 text-center">
-                                        <img src="img/eo.jpg" alt="User" class="img-team img-fluid rounded-circle"/>
-                                        <h4>Elected Offcials</h4>
-                                        <p class="text-muted">Empower officials to engage constituents, promote accountability, and transparency.</p>
-                                    </div>
-                                    <div class="col-sm-4 mt-2 text-center">
-                                        <img src="img/cust.jpg" alt="User" class="img-team img-fluid rounded-circle"/>
-                                        <h4>Data Subscribers</h4>
-                                        <p class="text-muted">Deliver the most valuable precise political data set on earth.</p>
-                                    </div>
-                                </div>
-                        </section>
-
-                        <hr class="my-4">
-                        <section class="p-0" id="contact">
+                    <h3>Harnessing the People's Power</h3>
+                    <p class="mt-4">
+                        VOX POPULI<br/>"For the People"
+                    </p>
+                    <div class="launch-text">We're launching soon.</div> 
+                    
+                    <p class="mt-4">
+                        Check out the video of the problem we are solving.
+                    </p>      
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h6ZnQtI_nP8" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-sm-7 offset-sm-5 px-0 py-2">
+                    <!--Why This Domain-->
+                    <section class="pt-4 section-padding">
+                        <div class="container-fluid">
                             <div class="row">
                                 <div class="col-sm-8 mx-auto text-center">
+                                    <h2 class="text-primary pb-3">About</h2>
+                                    <p class="text-muted">
+                                        <b>Our mission is clear.</b> Restore accountability, transparency, accessibility, and centralization to the civic sphere.
+                                        
+                                        <br><br><b>Our team</b> consists of dedicated professionals with a unique blend of expertise and passion. With over a decade of collaboration together, we have a proven track record of innovation and positive impact. 
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div class="col-sm-8 mx-auto text-center">
+                                <h2 class="text-primary pb-3">Stakeholders and Value</h2>
+                                <p class="text-muted">
+                                    Our platform is designed to deliver value to three key stakeholders: Users, Elected Officials, and Data Subscribers.
+                                </p>
+                            </div>
+                            <div class="row d-md-flex mt-4">
+                                <div class="col-sm-4 mt-2 text-center">
+                                    <img src="img/user.jpg" alt="User" class="img-team img-fluid rounded-circle"/>
+                                    <h4>Users</h4>
+                                    <p class="text-muted reduced-margin">Non-social platform for accessible, informed, and engaged civic participation.</p>
+                                </div>
+                                <div class="col-sm-4 mt-2 text-center">
+                                    <img src="img/eo.jpg" alt="User" class="img-team img-fluid rounded-circle"/>
+                                    <h4>Elected Officials</h4>
+                                    <p class="text-muted reduced-margin">Empower officials to engage constituents, promote accountability, and transparency.</p>
+                                </div>
+                                <div class="col-sm-4 mt-2 text-center">
+                                    <img src="img/cust.jpg" alt="User" class="img-team img-fluid rounded-circle"/>
+                                    <h4>Data Subscribers</h4>
+                                    <p class="text-muted reduced-margin">Deliver the most valuable precise political data set on earth.</p>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                                 <div class="col-sm-8 mx-auto text-center">
                                     <h2 class="text-primary pb-3">Learn More</h2>
                                     <p class="text-muted">
                                         Have a question or want to stay updated? Send an email to 
                                         <a href="mailto:randy@cvlcvc.com?subject=Inquiry%20from%20your%20site">randy@cvlcvc.com</a>
-                                    </p>
-                                </div>
+                                      <p class="text-muted">
+                                    </p><b>2024 Kuhmpel, Inc - All Rights Reserved</p></b>
                             </div>
-                        </section>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-                        <!--footer-->
-                        <section class="mt-2">
-                            <div class="container">
-                                <div class="row mr-5 ml-5">
-                                    <div class="col-sm-12">
-                                        <p class="text-muted text-center">
-                                            &copy; 2024 Kuhmpel, Inc. - All Rights Reserved
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
- 
-
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-        <script src="js/countdown/jquery.countdown.min.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="js/countdown/jquery.countdown.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
 </html>
