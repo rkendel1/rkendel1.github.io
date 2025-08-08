@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
 </head>
 <body>
 <!-- Navbar -->
@@ -37,6 +38,7 @@
         <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="2">Team</a></li>
         <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="3">Faq</a></li>
         <li class="nav-item"><a class="nav-link" href="#" data-scroll-nav="4">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy</a></li>
       </ul>
     </div>
   </div>
@@ -241,6 +243,20 @@
 </section>
 <!-- Download End -->
 
+<!-- Privacy Policy Start -->
+<section class="privacy-policy section-padding" id="privacy-policy">
+  <div class="container">
+    <div class="section-header text-center">
+      <h3>Privacy Policy</h3>
+      <span class="line"></span>
+    </div>
+    <div id="privacy-policy-content">
+      <!-- Content will be loaded here -->
+    </div>
+  </div>
+</section>
+<!-- Privacy Policy End -->
+
 <footer class="footer-copy text-center">
   <p>2024 &copy; Kuhmpel, Inc.</p>
 </footer>
@@ -270,36 +286,22 @@
       }
     });
     $('.slider').bxSlider({ pager: false });
+
+    // Fetch and display privacy policy
+    $.get("privacy.md", function(markdown) {
+      var converter = new showdown.Converter();
+      var html = converter.makeHtml(markdown);
+      $("#privacy-policy-content").html(html);
+    });
   });
   $(window).on("scroll", function() {
     var bodyScroll = $(window).scrollTop(),
         navbar = $(".navbar");
     if (bodyScroll > 50) {
-      $('.navbar-logo img').attr('src', 'img/logo.png');
-      navbar.addClass("nav-scroll");
-    } else {
-      $('.navbar-logo img').attr('src', 'img/logo.png');
-      navbar.removeClass("nav-scroll");
-    }
-  });
-  $(window).on("load", function() {
-    var bodyScroll = $(window).scrollTop(),
-        navbar = $(".navbar");
-    if (bodyScroll > 50) {
-      $('.navbar-logo img').attr('src', 'img/logo.png');
-      navbar.addClass("nav-scroll");
-    } else {
-      $('.navbar-logo img').attr('src', 'img/logo.png');
-      navbar.removeClass("nav-scroll");
-    }
-    $.scrollIt({
-      easing: 'swing',
-      scrollTime: 900,
-      activeClass: 'active',
-      onPageChange: null,
-      topOffset: -63
-    });
-  });
-</script>
-</body>
-</html>
+            $('.navbar-logo img').attr('src', 'img/logo.png');
+            navbar.addClass("nav-scroll");
+          } else {
+            navbar.removeClass("nav-scroll");
+          }
+        });
+      </script>
